@@ -1,6 +1,4 @@
-
-
-/* Set a maximum width for the content and center it */
+/* Set Maximum width and center*/
 .container {
     max-width: 1600px;
     margin: 0 auto;
