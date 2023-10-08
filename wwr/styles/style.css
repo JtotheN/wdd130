@@ -1,0 +1,115 @@
+
+
+/* Set a maximum width for the content and center it */
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* background styles */
+#background {
+    background-color: #396E94;
+    height: 725px;
+}
+
+/* Body styles */
+body {
+    background-color: white;
+}
+
+/* Header styles */
+header {
+    background-color: #396FAB;
+}
+
+/* Navigation styles */
+nav a:hover {
+    background-color: white;
+    color: white;
+}
+
+nav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+/* Button hover styles */
+.book:hover, .join:hover {
+    background-color: #d0ebf2;
+    color: black;
+}
+
+/* Heading 4 styles */
+h4 {
+    color: #396FAB;
+}
+
+/* Hero message styles */
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+/* Hero image styles */
+#hero-img {
+    width: 100%;
+}
+
+/* Home title styles */
+.home-title {
+    color: #396FAB;
+}
+
+/* Button box styles */
+.button-box {
+    text-align: center;
+}
+
+/* Main section styles */
+main section {
+    text-align: center;
+}
+
+/* Message styles */
+.msg {
+    background-color: #396FAB;
+}
+
+.msg h2, .msg p {
+    color: white;
+}
+
+/* Icon styles */
+.icon {
+    width: 80px;
+}
+
+/* Button styles */
+.book, .join {
+    background-color: white;
+    color: #396FAB;
+    text-decoration: none;
+}
+
+/* Footer styles */
+footer {
+    background-color: #A4876A;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
