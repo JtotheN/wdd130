@@ -18,6 +18,10 @@ body {
 /* Header styles */
 header {
     background-color: #396FAB;
+    
+}
+.logo {
+    border-radius: 50%;
 }
 
 /* Navigation styles */
