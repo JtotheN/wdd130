@@ -1,19 +1,37 @@
+/* Set fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=RocknRoll+One&display=swap');
+
 /* Set Maximum width and center*/
 .container {
     max-width: 1600px;
     margin: 0 auto;
 }
-
+.home-title {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+}
+.msg {
+    background-color: #6f7364;
+    line-height: 1.5em;
+  }
 /* background styles */
 #background {
     background-color: #396E94;
     height: 725px;
-}
+    }
 
 /* Body styles */
 body {
-    background-color: white;
+    background-color: #fcfbfb;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
+h2 {
+    margin: 0;
+}
+
 
 /* Header styles */
 header {
@@ -26,13 +44,14 @@ header {
 
 /* Navigation styles */
 nav a:hover {
-    background-color: white;
+    background-color: rgb(148, 162, 240);
     color: white;
 }
 
 nav a {
+    color: #fcfbfb;
     text-align: center;
-    color: white;
+    padding: 35px;
     text-decoration: none;
 }
 
