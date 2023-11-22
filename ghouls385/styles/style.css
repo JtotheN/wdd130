@@ -85,7 +85,7 @@ nav a {
     background-color: rgb(45, 45, 101);
     text-align: center;
     margin-top: -10px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 /* Home Title Styles */
@@ -103,28 +103,29 @@ h4 {
 .home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
+    margin-left: 75px;
 }
 
 .who-title {
     grid-column: 2/5;
     grid-row: 1/3;
     font-size: 1.5em;
-    margin-left: 75px;
+    
     color: #4b1a79;
    
  }
 .who-p {
-    grid-column: 6/9;
-    grid-row: 2/4;
+    grid-column: 2/5;
+    grid-row: 3/4;
+
     
 }
 
 .who-image {
-    grid-column: 2/5;
+    grid-column: 7/9;
     grid-row: 2/4;
     margin-top: 50px;
-    margin-left: 75px;
- }
+    }
 
 .founder {
     grid-column: 2/9;
