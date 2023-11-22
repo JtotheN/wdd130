@@ -45,7 +45,7 @@ nav {
 }
 
 nav a:hover {
-    background-color: #6cdc5d; /* Light green on hover */
+    background-color: #6cdc5d;
     color: white;
 }
 
@@ -54,13 +54,13 @@ nav a {
     color: #fcfbfb;
     text-align: center;
     padding: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #hero {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: -100px;
+    text-align: center;
 }
 
 .hero-img {
@@ -71,9 +71,6 @@ nav a {
     grid-column: 1/4;
     grid-row: 1/2;
     z-index: -1;
-    text-align: center;
-    grid-column: 1/4;
-    grid-row: 1/2;
     
 }
 
@@ -82,9 +79,8 @@ nav a {
     grid-row: 2/3;
     color: #f3f1f1;
     font-family: Verdana, Tahoma, sans-serif;
-    background-color: rgb(45, 45, 101);
-    text-align: center;
-    margin-top: -10px;
+    background-color: #4b1a79;
+    margin-top: 40px;
     margin-bottom: 100px;
 }
 
@@ -93,6 +89,7 @@ nav a {
     font-family: 'Nosifer', 'Bradley Hand', sans-serif;
     font-size: 3em;
     color: #f2f2f2;
+   
 }
 
 h4 {
@@ -110,15 +107,13 @@ h4 {
     grid-column: 2/5;
     grid-row: 1/3;
     font-size: 1.5em;
-    
     color: #4b1a79;
    
  }
 .who-p {
     grid-column: 2/5;
     grid-row: 3/4;
-
-    
+  
 }
 
 .who-image {
@@ -130,7 +125,7 @@ h4 {
 .founder {
     grid-column: 2/9;
     grid-row: 4/6;
-    background-color: #8a2be2; /* Dark violet */
+    background-color: #2b1e45; 
     color: white;
     margin-top: 250px;
     margin-left: 50px;
@@ -140,14 +135,15 @@ h4 {
 }
 
 .mission {
-    background-color: #808080; /* Medium gray */
-    color: #e5e9ed;
+    background-color: #808080;
+    color: #ffffff;
     margin-top: 150px;
     margin-left: 50px;
     grid-column: 1/10;
     grid-row: 7/9;
-    padding: 40px;
-    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 5px 5px 10px #333431;
+    
     
 }
 
