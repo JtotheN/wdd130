@@ -13,7 +13,7 @@
 
 /* Body styles */
 body {
-    background-color: #f4f4f4; /* Light gray background */
+    background-color: #d1cece; 
     font-family: "Anton", Arial, sans-serif;
     font-size: 18px;
     color: #333;
@@ -132,7 +132,7 @@ h4 {
     grid-row: 4/6;
     background-color: #8a2be2; /* Dark violet */
     color: white;
-    margin-top: 150px;
+    margin-top: 250px;
     margin-left: 50px;
     padding: 20px;
     border-radius: 10px;
@@ -142,7 +142,7 @@ h4 {
 .mission {
     background-color: #808080; /* Medium gray */
     color: #e5e9ed;
-    margin-top: 50px;
+    margin-top: 150px;
     margin-left: 50px;
     grid-column: 1/10;
     grid-row: 7/9;
@@ -160,7 +160,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     font-size: 15px;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 /* Paranormal Activity Page 2 */
 #para-hero {
