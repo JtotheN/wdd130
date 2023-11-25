@@ -5,6 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script>
+        // Open the Modal
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        // Close the Modal
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
 </head>
 <body>
     <div>
@@ -21,23 +63,84 @@
         </header>
         <div id="invest-hero">
             <div id="invest-box">
-                <img class="invest-img" src="images/rsz_equipment.jpg"  alt="paranormal equipment"> <img src="images/rsz_group_invest.jpg" alt="group investigation">
+                <img class="invest-img" src="images/woods.jpg"  alt="haunted woods"> 
             </div>
-        </div>
+            <div class="invest-title">
+                <h1>Investigations</h1>
+                </div>      
+            </div>
     </div>
-    <main class="invest-grid">
-        <div class="invest-title">
-        <h1>Investigations</h1>
-        </div>
-        <div class="public1">
-            <img src="images/rsz_public_investigation.jpg" alt="public investigation">
-        </div>
-        <div class="house">
-            <img src="images/rsz_1rsz_evidence_1.jpg" alt="investigating">
-        </div>
+    <main>
         <div class="invest-p">
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
+        <div class="row">
+           <div class="column">
+              <img src="images/box-evidence.jpg" alt="dosing rods" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+              <img src="images/box-equipment.jpg" alt="equipment" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+              <img src="images/box-group.jpg" alt="group investigation" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column">
+              <img src="images/box-public.jpg" alt="public investigation" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+         </div>
+          
+          <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/rsz_1rsz_evidence_1.jpg" alt="dosing rods" style="width:100%">
+            </div>
+          
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/rsz_equipment.jpg" alt="equipment" style="width:100%">
+                </div>
+          
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/rsz_group_invest.jpg" alt="group investigation" style="width:100%">
+                </div>
+          
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/rsz_public_investigation.jpg" alt="public investigation" style="width:100%">
+                </div>
+          
+              <!-- Next/previous controls -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+              <!-- Caption text -->
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+          
+              <!-- Thumbnail image controls -->
+              <div class="column">
+                <img class="demo" src="images/box-evidence.jpg" onclick="currentSlide(1)" alt="Dosing Rods">
+              </div>
+          
+              <div class="column">
+                <img class="demo" src="images/box-equipment.jpg" onclick="currentSlide(2)" alt="Common Paranormal Equipment">
+              </div>
+          
+              <div class="column">
+                <img class="demo" src="images/box-group.jpg" onclick="currentSlide(3)" alt="Group from our public investigation">
+              </div>
+          
+              <div class="column">
+                <img class="demo" src="images/box-public.jpg" onclick="currentSlide(4)" alt="Public Investigation">
+              </div>
+            </div>
+          </div>
+
         <div class="join-invest">
             <h2>Be Part of an Investigation</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
