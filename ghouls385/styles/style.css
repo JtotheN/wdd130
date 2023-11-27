@@ -65,6 +65,7 @@ nav a {
 
 .hero-img {
     width: 100%;
+    height: 75%;
 }
 
 #hero-box {
@@ -79,8 +80,7 @@ nav a {
     grid-row: 2/3;
     color: #f3f1f1;
     font-family: Verdana, Tahoma, sans-serif;
-    background-color: #4b1a79;
-    margin-top: 40px;
+    background-color: #2b1e45;
     margin-bottom: 100px;
 }
 
@@ -161,17 +161,15 @@ footer {
 /* Paranormal Activity Page 2 */
 #para-hero {
     display: grid;
-    grid-template-columns: repeat(4 1fr);
-    margin-top: -100px;
+    grid-template-columns: repeat(4, 1fr);
     margin-bottom: 50px;
 }
 .para-img {
     width: 100%;
-    grid-column: 2/5;
-    grid-row: 2/4;   
+    height: 70%;   
 }
 #para-box {
-    grid-column: 1/4;
+    grid-column: 1/5;
     grid-row: 1/2;
     z-index: -1;
 }
@@ -181,13 +179,13 @@ footer {
     font-size: 2em;
     color: #bfbac4;
     text-align: center;
-    grid-column: 1/4;
+    grid-column: 1/5;
     grid-row: 3/4;
     border-style: outset;
     background-color: #4b1a79;
-    margin-top: 75px;
     margin-inline-start: 100px;
     margin-inline-end: 100px;
+    margin-top: -200px;
  }
 
 /* Main section styles */
@@ -208,6 +206,7 @@ footer {
     grid-column: 1/4;
     grid-row: 3/5;
     margin-left: 75px;
+    
         
 }
 .hallway {
@@ -272,17 +271,17 @@ footer .social img:hover {
 /* Investigations page 3 */
 #invest-hero {
     display: grid;
-    grid-template-columns: repeat(4 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin-top: -100px;
-    margin-bottom: 50px;
+    
 }
 .invest-img {
     width: 100%;
-    grid-column: 2/5;
-    grid-row: 2/4;   
+     
+     
 }
 #invest-box {
-    grid-column: 1/4;
+    grid-column: 1/5;
     grid-row: 1/2;
     z-index: -1;
 }
@@ -292,17 +291,39 @@ footer .social img:hover {
     font-size: 2em;
     color: #bfbac4;
     text-align: center;
-    grid-column: 1/4;
+    grid-column: 2/4;
     grid-row: 3/4;
     border-style: outset;
     background-color: #4b1a79;
-    margin-top: 75px;
     margin-inline-start: 100px;
     margin-inline-end: 100px;
+    margin-top: 100px;
  }
+ .invest-p {
+    margin-inline-start: 200px;
+    margin-inline-end: 200px;
+    margin-top: 100px; 
+    margin-bottom: 100px;  
+ }
+ .join-invest {
+    margin-inline-start: 100px;
+    margin-inline-end: 100px;
+    margin-top: 100px; 
+    margin-bottom: 100px;
+ }
+ .button-box-invest {
+    margin-left: 100px;
+ }
+
 .row > .column {
     padding: 0 8px;
   }
+/* Create four equal columns that floats next to eachother */
+.column {
+    float:left;
+    width: 25%;
+    margin-left: 15px;
+    }
   
   .row:after {
     content: "";
@@ -310,11 +331,7 @@ footer .social img:hover {
     clear: both;
   }
   
-  /* Create four equal columns that floats next to eachother */
-  .column {
-    float: left;
-    width: 25%;
-  }
+
   
   /* The Modal (background) */
   .modal {
