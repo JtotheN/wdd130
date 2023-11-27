@@ -123,7 +123,7 @@ h4 {
     }
 
 .founder {
-    grid-column: 2/9;
+    grid-column: 3/8;
     grid-row: 4/6;
     background-color: #2b1e45; 
     color: white;
@@ -132,6 +132,7 @@ h4 {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 100px;
+    text-align: center;
 }
 
 .mission {
@@ -196,23 +197,25 @@ footer {
 }
 
 .para-p {
-    grid-column: 2/10;
+    grid-column: 2/9;
     grid-row: 2/3;
     margin-top: 25px;
     margin-bottom: 200px;
 }
 
-.house{
-    grid-column: 1/4;
+.house {
+    grid-column: 2/3;
     grid-row: 3/5;
     margin-left: 75px;
-    
-        
+    background-color: black;
+    padding: 10px;
+         
 }
 .hallway {
-    grid-column: 6/9;
+    grid-column: 5/9;
     grid-row: 3/7; 
     margin-top: 75px;
+    
     
 }
 .get_in_touch {
