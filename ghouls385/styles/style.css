@@ -291,7 +291,7 @@ footer .social img:hover {
     font-size: 2em;
     color: #bfbac4;
     text-align: center;
-    grid-column: 2/4;
+    grid-column: 1/5;
     grid-row: 3/4;
     border-style: outset;
     background-color: #4b1a79;
