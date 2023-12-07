@@ -302,30 +302,39 @@ footer .social img:hover {
     margin-inline-end: 100px;
     margin-top: 100px;
  }
- .invest-p {
-    margin-inline-start: 200px;
-    margin-inline-end: 200px;
+.invest-p {
+    margin-inline-start: 100px;
+    margin-inline-end: 100px;
     margin-top: 100px; 
     margin-bottom: 100px;  
  }
- .join-invest {
+.join-invest {
     margin-inline-start: 100px;
     margin-inline-end: 100px;
     margin-top: 100px; 
     margin-bottom: 100px;
  }
- .button-box-invest {
+.button-box-invest {
     margin-left: 100px;
  }
 
-.row > .column {
-    padding: 0 8px;
-  }
+
 /* Create four equal columns that floats next to eachother */
+.image-container {
+    display: flex;
+    justify-content: space-evenly;   
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    background-color: black;
+    padding-block: 35px;
+    
+
+    
+}
 .column {
     float:left;
     width: 25%;
-    margin-left: 15px;
+    margin-left: 25px;
     }
   
   .row:after {
@@ -337,7 +346,7 @@ footer .social img:hover {
 
   
   /* The Modal (background) */
-  .modal {
+ .modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -351,7 +360,7 @@ footer .social img:hover {
   }
   
   /* Modal Content */
-  .modal-content {
+.modal-content {
     position: relative;
     background-color: #fefefe;
     margin: auto;
@@ -361,7 +370,7 @@ footer .social img:hover {
   }
   
   /* The Close Button */
-  .close {
+.close {
     color: white;
     position: absolute;
     top: 10px;
@@ -370,8 +379,7 @@ footer .social img:hover {
     font-weight: bold;
   }
   
-  .close:hover,
-  .close:focus {
+.close:hover,  .close:focus {
     color: #999;
     text-decoration: none;
     cursor: pointer;
@@ -383,8 +391,7 @@ footer .social img:hover {
   }
   
   /* Next & previous buttons */
-  .prev,
-  .next {
+.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -401,19 +408,19 @@ footer .social img:hover {
   }
   
   /* Position the "next button" to the right */
-  .next {
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
   }
   
   /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
+.prev:hover,
   .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
   
   /* Number text (1/3 etc) */
-  .numbertext {
+.numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
@@ -422,26 +429,26 @@ footer .social img:hover {
   }
   
   /* Caption text */
-  .caption-container {
+.caption-container {
     text-align: center;
     background-color: black;
     padding: 2px 16px;
     color: white;
   }
   
-  img.demo {
+img.demo {
     opacity: 0.6;
   }
   
-  .active,
+.active,
   .demo:hover {
     opacity: 1;
   }
   
-  img.hover-shadow {
+img.hover-shadow {
     transition: 0.3s;
   }
   
-  .hover-shadow:hover {
+.hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
